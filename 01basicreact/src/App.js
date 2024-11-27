@@ -4,6 +4,8 @@ function App() {
   return (
     <>
       <Demo />
+      <Demo />
+      <Demo />
     </>                                   
   );
 }
