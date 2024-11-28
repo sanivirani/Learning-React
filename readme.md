@@ -1,99 +1,166 @@
-## ----------------- MyOwn Project ----------------- //
+## Road Map
 
-Functionalitiy : basic blog website  
-{
-sign up / sign in / log in / log out
+//-------------------------------//
+
+# why to learn react
+
+- build ul
+- makes easy to manage & build complex front end
+
+# interview que.. - create complex front end
+
+# when should i learn react ?
+
+- after mastering JS
+- most project don't need react in initial phase
+
+# why react was creacted ?
+
+- (fantom)Ghost message problem
+- no conssistency in ui
+
+state (variable) -> JS & UI -> DOM
+
+# first time use react in website
+
+- khan acedemy
+- unsplash
+
+# don't learn react if
+
+- you don't know how JS works OR DOM works [browser inner working video]
+
+# react learning procees
+
+2 type
+
+[1] go in depth
+
+babel,fiber,virtual DOM, diff algo, hydration
+
+[2] by making projects (one topic at a time)
+
+Todo,calculator,Github API
+
+# react is a libaray
+
+framework VS library
+
+react is library
+
+web on - react
+
+build mobile app - react native
+
+## react utility is famous but bulkey big bunddle size not usefull
+
+alterneative famous utility is [ vite @ parsle ]
+
+## topic to learn
+
+- core of react [state,or UI manipulation,JSK]
+- component Re-usability
+- reusing of component (props)[propeties- key or values]
+- how to propagate change (hooks)
+
+# additional addon to react
+
+- Router (react don't have router)
+- state managemet (react don't have state mangement)
+  => Redux,Reduc toolkit,Zustand,context API
+
+- class based component
+  => legacy code
+
+BAAS apps [Backend As A Service] (appwrite,firebase,superbase)
+
+- social media clone, e-commerce app....
+
+# open source
+
+-free product api [freeApi.app]
+
+### After React
+
+- react is not a comolete solution in most case
+  => no seo , browser render of JS , no routing
+- Framework
+  => Next JS, Gatsby , Remix
+
+- next js provide frontend and backend
+
+## UI updation is react control
+
+react fiber algoridham (vrtual dom update)
+
+## react interview question on counter
+
+const addValue = () => {
+// counter = counter + 1;
+setCounter((precounter) => precounter + 1);
+setCounter((precounter) => precounter + 1);
+setCounter((precounter) => precounter + 1);
+setCounter((precounter) => precounter + 1);
+}
+
+## context API is only stand for => react
+
+# ---------- Redux --------------/
+
+## outside => stateManagement => Redux
+
+## Redux use in react => react-Redux
+
+## new Redux-toolkit(rtk)
+
+# Redux is indepentent state mangement library
+
+main problem is a stateManagment
+
+both of an Redux and Rtk
+
+store , reducers are object
+useSelector , useDispatch
+
+# ----------- use Redux ----------------- /
+
+# ---- path is own way to create ---/
+
+src -> app -> store.js
+
+first configure store : import {configureStore} from '@reduxjs/toolkit'
+
+use this method to use
+export const store = configureStore({});
+
+new folder to create slice file whatwerr name to but remeber to use redux that way
+import { createSlice,nanoid } from "@reduxjs/toolkit";
+
+\_ nanoid is create uniqe ids
+
+create instialState basically you can create array or objects
+
+## ----- remember two value acsess
+
+redusers : {
+name : (state,action) => {}
+}
+
+## never muted your state
+
+-- Redux -- steps.
+
+start {
+
+create store
+add reducer
+create slice
+exoprt reducer
 
 }
 
-# react is a - front end library
+## features call Slice whatever you called -- /
 
--- most of time react uses is API handling time back end send request
+# ------ forwardref hook -----/
 
-## ----- issues (complex ) -----
-
-how to handle image , upload , preview , optimization , text editor, bold , italic etc.. , create list , how to save back end and back end to data how to display
-
-## sensetive database url database id how to save value
-
-## -- use services --
-
-# appwrite - complete back end services ( open source )
-
-# use react components : Tiny MCE
-
-- use to reach text editor
-
-# article data store in html
-
-- React hook form . use manage error
-
-slug is no spaces
-
-# ------ dependencies ------/
-
-- redux/toolkit , redux
-- react-router-dom
-- appwrite for backend support
-- tinymce - react for rich formating tool
-- html-react-parser for html
-- react-hook-form
-
-## ------- create app diffrence react / vite / next.js
-
-## ---- set up Environments variables ------//
-
-- system variable
-
-- REACT_APP_APPWRITE_URL ="test environments"
-
-create .env file and put environments variables
-.env file is a ignore meance dont't send enviroments variables in send in server
-
-- in .env file called sample file personal values
-
-# ------- React through --------------/
-
-- React setup environments variables
-
-- .env file
-  REACT_APP_NOT_APPWRITE_URL="test environments" ,"any value"
-
-# consol.log(process.env.REACT_APP_NOT_APPWRITE)
-
-# ------- Vite though ---------------/
-
-prevent accidenentally leaking env variables to the clint so prefixed with
-
-- .env file
-  --- VITE_APPWRITE_URL ----
-
-# consol.log(import.meta.env.VITE_SOME_KEY) // 123
-
-- consol.log(impoet.meta.env.DB_PASSWORD) // undefined no access
-
-## ------------------ imporntant files in .env file ------------- //
-
-VITE_APPWRITE-URL
-VITE-APPWRITE-PROJECT-ID
-VITE-APPWRITE-DATABASE-ID
-VITE-APPWRITE-COLLECTION-ID
-VITE-APPWRITE-BUCKET-ID
-
-# -------------- production grade -------------------- //
-
-## --- every time not export in console.log so... ---- //
-
-make a new folder in src name whatever -- conf -> conf.js -----
-
-const conf = {
-appwriteUrl: String(import.meta.env.VITE_APPWRITE_URL), // appwriteUrl always string value
-appwrieProjectId: String(import.meta.env.PROJECT_ID),
-appwriteDataBaseId: String(import.meta.env.DATABASE_ID),
-appwriteCollectionId: String(import.meta.env.COLLECTION_ID),
-appwriteBuketId: String(import.meta.env.BUCKET_ID),
-};
-
-export default conf;
-
-# ---------------------------------------------------------//
+ex . creating login form in input field is diffrent and same input field use in username and password so hear is --- login page and his state refrence --- is needed so useful forward hook .
