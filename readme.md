@@ -1,6 +1,4 @@
-## Road Map
-
-//-------------------------------//
+# --------- Road Map ------------ #
 
 # why to learn react
 
@@ -93,7 +91,7 @@ BAAS apps [Backend As A Service] (appwrite,firebase,superbase)
 
 react fiber algoridham (vrtual dom update)
 
-## react interview question on counter
+## react most interview question on counter
 
 const addValue = () => {
 // counter = counter + 1;
