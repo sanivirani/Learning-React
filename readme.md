@@ -103,7 +103,7 @@ setCounter((precounter) => precounter + 1);
 
 ## context API is only stand for => react
 
-# ---------- Redux --------------/
+# //---------- Redux --------------//
 
 ## outside => stateManagement => Redux
 
@@ -120,7 +120,7 @@ both of an Redux and Rtk
 store , reducers are object
 useSelector , useDispatch
 
-# ----------- use Redux ----------------- /
+# //----------- use Redux -----------------//
 
 # ---- path is own way to create ---/
 
@@ -157,8 +157,8 @@ exoprt reducer
 
 }
 
-## features call Slice whatever you called -- /
+# //---- features call Slice whatever you called ----//
 
-# ------ forwardref hook -----/
+# //------ forwardref hook -----//
 
 ex . creating login form in input field is diffrent and same input field use in username and password so hear is --- login page and his state refrence --- is needed so useful forward hook .
