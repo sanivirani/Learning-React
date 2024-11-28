@@ -122,7 +122,7 @@ useSelector , useDispatch
 
 # //----------- use Redux -----------------//
 
-# ---- path is own way to create ---/
+# //---- path is own way to create ----//
 
 src -> app -> store.js
 
